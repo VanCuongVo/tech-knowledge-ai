@@ -10,15 +10,17 @@ class HomeNotifier extends Notifier<HomeState> {
   @override
   HomeState build() {
     // Automatically load data when the notifier is initialized
-    _loadData();
-    return HomeState.initial();
+    Future.microtask(() => _loadData());
+    return HomeState.initial().copyWith(isLoading: true);
   }
 
   Future<void> _loadData() async {
-    state = state.copyWith(isLoading: true);
+    if (!state.isLoading) {
+      state = state.copyWith(isLoading: true);
+    }
     try {
       final items = await getAllKnowledgeUseCase();
-      state = state.copyWith(items: items, isLoading: false);
+      state = state.copyWith(items: items, isLoading: false, errorMessage: null);
     } catch (e) {
       print('Error loading knowledge: $e');
       state = state.copyWith(isLoading: false, errorMessage: e.toString());
