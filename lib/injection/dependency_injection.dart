@@ -5,9 +5,12 @@ import 'package:knowflow_ai/core/services/gemini_service_impl.dart';
 import 'package:knowflow_ai/core/services/search_service_impl.dart';
 import 'package:knowflow_ai/data/datasources/local/knowledge_local_datasource.dart';
 import 'package:knowflow_ai/data/datasources/local/knowledge_local_datasource_impl.dart';
-import 'package:knowflow_ai/domain/Irepositories/knowledge_repository.dart';
-import 'package:knowflow_ai/domain/repositories/knowledge_repository_Impl.dart';
+import 'package:knowflow_ai/data/repositories/knowledge_repository_impl.dart';
+import 'package:knowflow_ai/domain/repositories/knowledge_repository.dart';
+
 import 'package:knowflow_ai/domain/usecases/ask_ai_usecase.dart';
+
+import 'package:knowflow_ai/domain/usecases/get_all_knowledge_usecase.dart';
 
 final sl = GetIt.instance;
 
@@ -29,4 +32,5 @@ Future<void> setupDependencies() async {
   );
 
   sl.registerLazySingleton(() => AskAIUseCase(sl()));
+  sl.registerLazySingleton(() => GetAllKnowledgeUseCase(sl()));
 }

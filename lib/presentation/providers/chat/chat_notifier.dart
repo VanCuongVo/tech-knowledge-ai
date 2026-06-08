@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../../domain/entities/chat_message.dart';
 import '../../../domain/usecases/ask_ai_usecase.dart';
 import 'chat_state.dart';

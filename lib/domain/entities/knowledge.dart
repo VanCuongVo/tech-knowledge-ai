@@ -7,6 +7,7 @@ class Knowledge extends Equatable {
   final String description;
   final List<String> keywords;
   final String rawData;
+  final String imageUrl;
 
   const Knowledge({
     required this.id,
@@ -15,9 +16,9 @@ class Knowledge extends Equatable {
     required this.description,
     required this.keywords,
     required this.rawData,
+    required this.imageUrl,
   });
 
-  // So sánh bằng filed Name
   @override
   List<Object?> get props => [
     id,
@@ -26,5 +27,6 @@ class Knowledge extends Equatable {
     description,
     keywords,
     rawData,
+    imageUrl,
   ];
 }

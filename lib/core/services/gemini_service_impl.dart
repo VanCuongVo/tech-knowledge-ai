@@ -6,7 +6,11 @@ class GeminiServiceImpl implements GeminiService {
   late final GenerativeModel _model;
 
   GeminiServiceImpl() {
-    _model = GenerativeModel(model: Env.modelName, apiKey: Env.geminiApiKey);
+    _model = GenerativeModel(
+      model: Env.modelName,
+      apiKey: Env.geminiApiKey,
+      generationConfig: GenerationConfig(temperature: 0.0),
+    );
   }
 
   @override

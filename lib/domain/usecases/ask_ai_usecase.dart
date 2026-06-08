@@ -1,4 +1,4 @@
-import 'package:knowflow_ai/domain/Irepositories/knowledge_repository.dart';
+import 'package:knowflow_ai/domain/repositories/knowledge_repository.dart';
 
 class AskAIUseCase {
   final KnowledgeRepository repository;

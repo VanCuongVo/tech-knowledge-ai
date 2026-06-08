@@ -1,7 +1,9 @@
 import 'package:knowflow_ai/core/Iservices/gemini_service.dart';
 import 'package:knowflow_ai/core/Iservices/search_service.dart';
 import 'package:knowflow_ai/data/datasources/local/knowledge_local_datasource.dart';
-import 'package:knowflow_ai/domain/Irepositories/knowledge_repository.dart';
+import 'package:knowflow_ai/domain/entities/knowledge.dart';
+import 'package:knowflow_ai/domain/repositories/knowledge_repository.dart';
+
 import '../../core/constants/prompt_constants.dart';
 
 class KnowledgeRepositoryImpl implements KnowledgeRepository {
@@ -14,6 +16,11 @@ class KnowledgeRepositoryImpl implements KnowledgeRepository {
     required this.searchService,
     required this.local,
   });
+
+  @override
+  Future<List<Knowledge>> getAllKnowledge() async {
+    return await local.getAllKnowledge();
+  }
 
   @override
   Future<String> askQuestion(String question) async {
