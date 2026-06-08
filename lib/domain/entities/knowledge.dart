@@ -17,6 +17,14 @@ class Knowledge extends Equatable {
     required this.rawData,
   });
 
+  // So sánh bằng filed Name
   @override
-  List<Object?> get props => [id, category, name, description, keywords, rawData];
+  List<Object?> get props => [
+    id,
+    category,
+    name,
+    description,
+    keywords,
+    rawData,
+  ];
 }
