@@ -1,0 +1,579 @@
+[
+  {
+    "id": 1,
+    "category": "CPU",
+    "name": "Intel Core i9-14900K",
+    "brand": "Intel",
+    "description": "Vi xử lý đầu bảng thế hệ 14 của Intel mang lại hiệu năng tối đa cho gaming và sáng tạo nội dung, với mức xung nhịp có thể lên tới 6.0 GHz.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "24 (8 P-Cores, 16 E-Cores)",
+      "threads": "32",
+      "base_clock": "3.2 GHz",
+      "boost_clock": "6.0 GHz"
+    },
+    "advantages": [
+      "Hiệu năng đa nhân và đơn nhân cực khủng",
+      "Xung nhịp rất cao ngay khi xuất xưởng",
+      "Hỗ trợ cả RAM DDR4 và DDR5"
+    ],
+    "disadvantages": [
+      "Tiêu thụ điện năng rất cao",
+      "Yêu cầu tản nhiệt nước cao cấp (AIO 360mm trở lên)",
+      "Sự khác biệt hiệu năng so với i9-13900K không đáng kể"
+    ],
+    "recommended_usage": [
+      "Chơi game AAA ở độ phân giải 4K",
+      "Render video 4K/8K, đồ họa 3D nặng",
+      "Lập trình và biên dịch mã nguồn phức tạp"
+    ],
+    "price_range": "14.500.000 - 16.000.000 VNĐ"
+  },
+  {
+    "id": 2,
+    "category": "CPU",
+    "name": "Intel Core i7-14700K",
+    "brand": "Intel",
+    "description": "Phiên bản nâng cấp sáng giá nhất của thế hệ 14 với việc bổ sung thêm E-Cores, mang đến sự cân bằng hoàn hảo giữa chơi game và làm việc.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "20 (8 P-Cores, 12 E-Cores)",
+      "threads": "28",
+      "base_clock": "3.4 GHz",
+      "boost_clock": "5.6 GHz"
+    },
+    "advantages": [
+      "Đa nhiệm tuyệt vời nhờ tăng số lượng nhân E-Core",
+      "Hiệu năng chơi game mạnh mẽ tiệm cận i9",
+      "Tỷ lệ hiệu năng trên giá thành rất tốt trong phân khúc cao cấp"
+    ],
+    "disadvantages": [
+      "Vẫn tỏa nhiều nhiệt khi tải nặng",
+      "Yêu cầu bo mạch chủ có dàn VRM chất lượng"
+    ],
+    "recommended_usage": [
+      "Chơi game 2K/4K và vừa chơi vừa stream",
+      "Sáng tạo nội dung, làm phim, dựng 3D",
+      "Chạy máy ảo và đa nhiệm cường độ cao"
+    ],
+    "price_range": "10.500.000 - 11.500.000 VNĐ"
+  },
+  {
+    "id": 3,
+    "category": "CPU",
+    "name": "Intel Core i5-14600K",
+    "brand": "Intel",
+    "description": "CPU quốc dân cho phân khúc cận cao cấp, mang lại hiệu năng chơi game ngang ngửa với các dòng i7/i9 đời trước.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "14 (6 P-Cores, 8 E-Cores)",
+      "threads": "20",
+      "base_clock": "3.5 GHz",
+      "boost_clock": "5.3 GHz"
+    },
+    "advantages": [
+      "Hiệu năng chơi game siêu hạng trong tầm giá",
+      "Dễ dàng làm mát hơn các dòng i7 và i9",
+      "Khả năng ép xung tốt"
+    ],
+    "disadvantages": [
+      "Tiêu thụ điện vẫn cao hơn so với đối thủ trực tiếp từ AMD",
+      "Nền tảng LGA 1700 chuẩn bị kết thúc vòng đời"
+    ],
+    "recommended_usage": [
+      "Build PC Gaming cận cao cấp cho độ phân giải 2K",
+      "Thiết kế đồ họa 2D, chỉnh sửa video nhẹ nhàng",
+      "Sử dụng hỗn hợp đa dụng hàng ngày"
+    ],
+    "price_range": "7.500.000 - 8.500.000 VNĐ"
+  },
+  {
+    "id": 4,
+    "category": "CPU",
+    "name": "Intel Core i5-14400F",
+    "brand": "Intel",
+    "description": "Lựa chọn tối ưu ngân sách cho game thủ, phiên bản không tích hợp GPU nhưng sở hữu hiệu năng tính toán xuất sắc cho các bộ máy giá rẻ.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "10 (6 P-Cores, 4 E-Cores)",
+      "threads": "16",
+      "base_clock": "2.5 GHz",
+      "boost_clock": "4.7 GHz"
+    },
+    "advantages": [
+      "Mức giá hợp lý, dễ tiếp cận",
+      "Tiêu thụ điện năng thấp, chạy mát",
+      "Đi kèm tản nhiệt mặc định đủ dùng cho nhu cầu cơ bản"
+    ],
+    "disadvantages": [
+      "Bắt buộc phải mua thêm card đồ họa rời",
+      "Không hỗ trợ ép xung (locked multiplier)"
+    ],
+    "recommended_usage": [
+      "PC Gaming giá rẻ hướng tới Full HD",
+      "Máy tính học tập, văn phòng",
+      "Nhu cầu giải trí gia đình phổ thông"
+    ],
+    "price_range": "5.000.000 - 5.500.000 VNĐ"
+  },
+  {
+    "id": 5,
+    "category": "CPU",
+    "name": "Intel Core i9-13900K",
+    "brand": "Intel",
+    "description": "Cựu vương thế hệ 13 nhưng vẫn giữ nguyên được sức mạnh vô song ở thời điểm hiện tại, dễ dàng xử lý mọi tác vụ nặng nề nhất.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "24 (8 P-Cores, 16 E-Cores)",
+      "threads": "32",
+      "base_clock": "3.0 GHz",
+      "boost_clock": "5.8 GHz"
+    },
+    "advantages": [
+      "Sức mạnh làm việc và chơi game gần như không thua kém 14900K",
+      "Mức giá hiện tại đã dễ chịu hơn rất nhiều so với lúc ra mắt",
+      "Đa nhiệm cực kỳ mạnh mẽ với 32 luồng"
+    ],
+    "disadvantages": [
+      "Rất nóng khi chạy 100% công suất",
+      "Cần đi kèm nguồn công suất thực lớn (từ 850W trở lên)"
+    ],
+    "recommended_usage": [
+      "Máy trạm Workstation chuyên nghiệp",
+      "Hệ thống PC Enthusiast tản nhiệt nước Custom",
+      "Chuyên dụng cho Render 3D và kiến trúc"
+    ],
+    "price_range": "13.000.000 - 14.500.000 VNĐ"
+  },
+  {
+    "id": 6,
+    "category": "CPU",
+    "name": "Intel Core i7-13700K",
+    "brand": "Intel",
+    "description": "Sự lựa chọn mạnh mẽ của thế hệ 13 dành cho những ai cần cân đối chi phí mà vẫn muốn trải nghiệm hiệu năng cao cấp.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "16 (8 P-Cores, 8 E-Cores)",
+      "threads": "24",
+      "base_clock": "3.4 GHz",
+      "boost_clock": "5.4 GHz"
+    },
+    "advantages": [
+      "Hiệu năng đa nhân gần bằng i9-12900K đời trước",
+      "Xử lý mượt mà các tựa game sát phần cứng nhất",
+      "Giá thành hợp lý cho hiệu năng mang lại"
+    ],
+    "disadvantages": [
+      "Nhiệt độ tỏa ra cao, cần đầu tư tản nhiệt AIO tốt"
+    ],
+    "recommended_usage": [
+      "Máy dựng phim, xử lý After Effects",
+      "Chơi game 2K/4K kết hợp làm việc",
+      "Streaming chất lượng cao"
+    ],
+    "price_range": "9.500.000 - 10.500.000 VNĐ"
+  },
+  {
+    "id": 7,
+    "category": "CPU",
+    "name": "Intel Core i5-13600K",
+    "brand": "Intel",
+    "description": "Một trong những CPU có hiệu năng chơi game tốt nhất trong tầm giá từng được ra mắt, đánh dấu sự vươn lên mạnh mẽ của dòng i5.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "14 (6 P-Cores, 8 E-Cores)",
+      "threads": "20",
+      "base_clock": "3.5 GHz",
+      "boost_clock": "5.1 GHz"
+    },
+    "advantages": [
+      "Sự kết hợp hoàn hảo giữa số lượng nhân luồng và xung nhịp",
+      "Hiệu suất chơi game đánh bại nhiều đối thủ đắt tiền hơn",
+      "Tiết kiệm điện hơn đáng kể so với i7/i9 cùng đời"
+    ],
+    "disadvantages": [
+      "Vẫn cần sử dụng với bo mạch chủ dòng Z để tối ưu hiệu năng"
+    ],
+    "recommended_usage": [
+      "Dàn PC Gaming phổ thông và cận cao cấp",
+      "Chỉnh sửa ảnh, thiết kế 2D chuyên nghiệp",
+      "Lập trình phần mềm và web"
+    ],
+    "price_range": "6.800.000 - 7.500.000 VNĐ"
+  },
+  {
+    "id": 8,
+    "category": "CPU",
+    "name": "Intel Core i5-13400F",
+    "brand": "Intel",
+    "description": "Mang trải nghiệm kiến trúc lai (P-Core/E-Core) xuống phân khúc giá rẻ, trở thành mẫu CPU quốc dân cho người dùng phổ thông.",
+    "specifications": {
+      "socket": "LGA 1700",
+      "cores": "10 (6 P-Cores, 4 E-Cores)",
+      "threads": "16",
+      "base_clock": "2.5 GHz",
+      "boost_clock": "4.6 GHz"
+    },
+    "advantages": [
+      "Hiệu năng đa nhân được cải thiện rõ rệt so với i5-12400F",
+      "Tiêu thụ điện rất ít, dễ dàng làm mát",
+      "Mức giá vô cùng cạnh tranh"
+    ],
+    "disadvantages": [
+      "Mức xung nhịp bị giới hạn",
+      "Không có iGPU để backup khi card rời hỏng"
+    ],
+    "recommended_usage": [
+      "Lắp ráp máy tính chơi game giá rẻ",
+      "Máy trạm đồ họa 2D cơ bản",
+      "Hệ thống PC dùng trong văn phòng"
+    ],
+    "price_range": "4.500.000 - 5.000.000 VNĐ"
+  },
+  {
+    "id": 9,
+    "category": "CPU",
+    "name": "Intel Core Ultra 9 285K",
+    "brand": "Intel",
+    "description": "Dòng vi xử lý thế hệ mới nhất của Intel với kiến trúc Arrow Lake, tập trung mạnh vào tối ưu điện năng tiêu thụ và tích hợp NPU xử lý AI.",
+    "specifications": {
+      "socket": "LGA 1851",
+      "cores": "24 (8 P-Cores, 16 E-Cores)",
+      "threads": "24",
+      "base_clock": "3.2 GHz",
+      "boost_clock": "5.7 GHz"
+    },
+    "advantages": [
+      "Tiêu thụ điện thấp hơn rất nhiều so với i9-14900K",
+      "Hoạt động cực kỳ mát mẻ, giảm tải cho hệ thống tản nhiệt",
+      "Tích hợp phần cứng tăng tốc xử lý AI chuyên dụng"
+    ],
+    "disadvantages": [
+      "Loại bỏ công nghệ Hyper-Threading (Siêu phân luồng)",
+      "Buộc người dùng phải mua bo mạch chủ Socket LGA 1851 hoàn toàn mới",
+      "Hiệu năng chơi game không có bước nhảy vọt so với thế hệ 14"
+    ],
+    "recommended_usage": [
+      "Sáng tạo nội dung với các công cụ AI",
+      "Lập trình, biên dịch dữ liệu cường độ cao",
+      "Người dùng cần một hệ thống cao cấp ổn định, tĩnh lặng và mát mẻ"
+    ],
+    "price_range": "15.500.000 - 17.000.000 VNĐ"
+  },
+  {
+    "id": 10,
+    "category": "CPU",
+    "name": "Intel Core Ultra 7 265K",
+    "brand": "Intel",
+    "description": "Vi xử lý kiến trúc Arrow Lake mang đến trải nghiệm đa nhiệm xuất sắc, với một thiết kế chiplet mới tối ưu hiệu năng trên từng watt điện.",
+    "specifications": {
+      "socket": "LGA 1851",
+      "cores": "20 (8 P-Cores, 12 E-Cores)",
+      "threads": "20",
+      "base_clock": "3.3 GHz",
+      "boost_clock": "5.5 GHz"
+    },
+    "advantages": [
+      "Hiệu quả năng lượng tuyệt vời so với người tiền nhiệm i7-14700K",
+      "Hiệu suất làm việc đa nhân và xử lý ứng dụng cực tốt",
+      "Nhiệt độ khi render được kiểm soát tốt"
+    ],
+    "disadvantages": [
+      "Chi phí đầu tư chuyển đổi sang nền tảng LGA 1851 cao",
+      "Chỉ hỗ trợ RAM DDR5"
+    ],
+    "recommended_usage": [
+      "Dựng phim 4K, làm hoạt hình 3D",
+      "Hệ thống làm việc cần chạy liên tục 24/7",
+      "Máy tính lập trình và xử lý dữ liệu lớn"
+    ],
+    "price_range": "10.500.000 - 12.000.000 VNĐ"
+  },
+  {
+    "id": 11,
+    "category": "CPU",
+    "name": "AMD Ryzen 7 7800X3D",
+    "brand": "AMD",
+    "description": "Vị vua không ngai trong làng CPU Gaming hiện tại với công nghệ 3D V-Cache độc quyền, cho trải nghiệm chơi game mượt mà nhất có thể.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "4.2 GHz",
+      "boost_clock": "5.0 GHz"
+    },
+    "advantages": [
+      "Hiệu năng chơi game đứng đầu bảng xếp hạng thế giới",
+      "Tiêu thụ điện năng cực kỳ thấp khi chơi game (thường chỉ 50-70W)",
+      "Bộ nhớ đệm L3 Cache khổng lồ (96MB) giúp tăng FPS tối đa"
+    ],
+    "disadvantages": [
+      "Hiệu năng làm việc đa nhân và render chỉ ở mức trung bình khá",
+      "Xung nhịp bị khóa, không thể ép xung tay truyền thống"
+    ],
+    "recommended_usage": [
+      "Máy tính chuyên biệt cho thi đấu eSport màn hình 360Hz+",
+      "Hệ thống cày cuốc game AAA cấu hình tối đa",
+      "Tối ưu cho game thủ chuyên nghiệp và Streamer"
+    ],
+    "price_range": "9.500.000 - 10.500.000 VNĐ"
+  },
+  {
+    "id": 12,
+    "category": "CPU",
+    "name": "AMD Ryzen 9 7950X3D",
+    "brand": "AMD",
+    "description": "Sự kết hợp hoàn hảo giữa sức mạnh đa nhân và khả năng chơi game đỉnh cao nhờ việc trang bị công nghệ 3D V-Cache lên CPU 16 nhân.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "16",
+      "threads": "32",
+      "base_clock": "4.2 GHz",
+      "boost_clock": "5.7 GHz"
+    },
+    "advantages": [
+      "Vừa làm việc nặng vửa chơi game xuất sắc",
+      "Mức tiêu thụ điện năng tối ưu hơn bản 7950X thường rất nhiều",
+      "Nhiệt độ được cải thiện tốt hơn"
+    ],
+    "disadvantages": [
+      "Cần thiết lập phần mềm Xbox Game Bar cẩn thận để hệ thống luân chuyển đúng nhân khi chơi game",
+      "Mức giá rất đắt đỏ"
+    ],
+    "recommended_usage": [
+      "Hệ thống PC All-in-One cao cấp nhất",
+      "Sáng tạo nội dung kết hợp giải trí tối đa",
+      "Làm việc với engine game (Unreal Engine, Unity)"
+    ],
+    "price_range": "17.500.000 - 19.000.000 VNĐ"
+  },
+  {
+    "id": 13,
+    "category": "CPU",
+    "name": "AMD Ryzen 9 7950X",
+    "brand": "AMD",
+    "description": "Cỗ máy tính toán đa nhân khổng lồ, sinh ra để giải quyết những khối lượng công việc render và tính toán khốc liệt nhất.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "16",
+      "threads": "32",
+      "base_clock": "4.5 GHz",
+      "boost_clock": "5.7 GHz"
+    },
+    "advantages": [
+      "Sức mạnh render đa nhân cực khủng khiếp",
+      "Xung nhịp rất cao, hỗ trợ các chuẩn kết nối PCIe 5.0 mới nhất",
+      "Kiến trúc đồng nhất, không phân chia P-Core và E-Core tránh lỗi tương thích phần mềm"
+    ],
+    "disadvantages": [
+      "Mặc định chạy rất nóng (được thiết kế để chạm mốc 95 độ C)",
+      "Yêu cầu hệ thống tản nhiệt và mainboard đắt tiền"
+    ],
+    "recommended_usage": [
+      "Máy trạm chuyên nghiệp, chạy máy ảo số lượng lớn",
+      "Render kiến trúc, mô phỏng 3D chuyên sâu",
+      "Biên dịch mã nguồn khổng lồ"
+    ],
+    "price_range": "14.500.000 - 16.000.000 VNĐ"
+  },
+  {
+    "id": 14,
+    "category": "CPU",
+    "name": "AMD Ryzen 9 7900X",
+    "brand": "AMD",
+    "description": "CPU cận cao cấp mang lại sự cân bằng hoàn hảo về số lượng nhân/luồng cho các hệ thống máy trạm vừa và nhỏ.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "12",
+      "threads": "24",
+      "base_clock": "4.7 GHz",
+      "boost_clock": "5.6 GHz"
+    },
+    "advantages": [
+      "Xung nhịp cơ bản mặc định rất cao (4.7 GHz)",
+      "Giải quyết mượt mà các tác vụ đa luồng phức tạp với 12 nhân vật lý",
+      "P/P (hiệu năng trên giá thành) rất tốt cho nhu cầu Workstation"
+    ],
+    "disadvantages": [
+      "Nhiệt độ hoạt động mặc định khá nóng tương tự đàn anh 7950X",
+      "Không quá nổi bật về mặt hiệu năng chơi game nếu so với 7800X3D"
+    ],
+    "recommended_usage": [
+      "Dựng và chỉnh sửa video 4K/8K",
+      "Xử lý âm thanh chuyên nghiệp, lập trình",
+      "Chạy tác vụ đa nhiệm cường độ cao"
+    ],
+    "price_range": "10.000.000 - 11.500.000 VNĐ"
+  },
+  {
+    "id": 15,
+    "category": "CPU",
+    "name": "AMD Ryzen 7 7700X",
+    "brand": "AMD",
+    "description": "Sự lựa chọn mạnh mẽ ở phân khúc tầm trung cao cấp với 8 nhân xử lý thực thụ kiến trúc Zen 4 nhanh nhẹn.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "4.5 GHz",
+      "boost_clock": "5.4 GHz"
+    },
+    "advantages": [
+      "Hiệu năng chơi game và làm việc rất đồng đều",
+      "Dễ dàng tương thích mọi phần mềm cũ nhờ kiến trúc nhân đồng nhất 8 nhân",
+      "Hỗ trợ Eco-mode tiết kiệm điện tuyệt vời"
+    ],
+    "disadvantages": [
+      "Phân khúc giá phải chịu sự cạnh tranh rất gay gắt từ dòng i5 thế hệ 13 và 14 của Intel"
+    ],
+    "recommended_usage": [
+      "Hệ thống PC đa dụng, cân bằng giữa giải trí và công việc",
+      "Sản xuất nội dung YouTube, TikTok",
+      "Chơi game ở độ phân giải 2K"
+    ],
+    "price_range": "8.000.000 - 9.000.000 VNĐ"
+  },
+  {
+    "id": 16,
+    "category": "CPU",
+    "name": "AMD Ryzen 5 7600X",
+    "brand": "AMD",
+    "description": "Lựa chọn khởi đầu tuyệt vời cho nền tảng AM5, sở hữu sức mạnh đơn nhân vượt trội đặc biệt thích hợp cho game eSport.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "6",
+      "threads": "12",
+      "base_clock": "4.7 GHz",
+      "boost_clock": "5.3 GHz"
+    },
+    "advantages": [
+      "Sức mạnh đơn nhân vượt trội, FPS game rất cao",
+      "Hưởng lợi từ khả năng nâng cấp dài hạn của Socket AM5 tới năm 2027+",
+      "Có tích hợp iGPU cơ bản để xuất hình"
+    ],
+    "disadvantages": [
+      "Không được tặng kèm tản nhiệt trong hộp",
+      "Phiên bản X đẩy điện áp cao nên nhiệt độ đôi lúc giật lên nhanh"
+    ],
+    "recommended_usage": [
+      "Cỗ máy chơi game eSport, bắn súng góc nhìn thứ nhất",
+      "Làm việc văn phòng đa nhiệm nhanh",
+      "Chỉnh sửa ảnh Photoshop, Lightroom cơ bản"
+    ],
+    "price_range": "5.500.000 - 6.500.000 VNĐ"
+  },
+  {
+    "id": 17,
+    "category": "CPU",
+    "name": "AMD Ryzen 5 7500F",
+    "brand": "AMD",
+    "description": "Mẫu CPU quốc dân của AMD ở phân khúc giá rẻ trên nền tảng AM5, lược bỏ iGPU để giảm giá thành tối đa cho game thủ.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "6",
+      "threads": "12",
+      "base_clock": "3.7 GHz",
+      "boost_clock": "5.0 GHz"
+    },
+    "advantages": [
+      "Mức giá cực kì hấp dẫn để bước chân vào nền tảng AM5 và DDR5",
+      "Hiệu năng chơi game ấn tượng đi kèm tản nhiệt gốc Wraith Stealth",
+      "Tiêu thụ điện rất thấp, chạy êm ái"
+    ],
+    "disadvantages": [
+      "Không có card đồ họa tích hợp",
+      "Xung nhịp thấp hơn một chút xíu so với người đàn anh Ryzen 5 7600"
+    ],
+    "recommended_usage": [
+      "Cấu hình PC Gaming giá rẻ và tầm trung",
+      "Máy tính cho học sinh, sinh viên",
+      "Người dùng có ngân sách eo hẹp nhưng muốn công nghệ mới nhất"
+    ],
+    "price_range": "4.000.000 - 4.500.000 VNĐ"
+  },
+  {
+    "id": 18,
+    "category": "CPU",
+    "name": "AMD Ryzen 9 9950X",
+    "brand": "AMD",
+    "description": "Quái vật đa nhân kiến trúc Zen 5 mới nhất của AMD, tập trung tối ưu hóa chỉ số IPC và giảm thiểu tối đa điện năng tiêu thụ.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "16",
+      "threads": "32",
+      "base_clock": "4.3 GHz",
+      "boost_clock": "5.7 GHz"
+    },
+    "advantages": [
+      "Cải thiện hiệu suất IPC rõ rệt",
+      "Xử lý các tập lệnh AVX-512 xuất sắc gấp đôi so với thế hệ Zen 4",
+      "Tiếp tục hỗ trợ nền tảng bo mạch chủ AM5 hiện có"
+    ],
+    "disadvantages": [
+      "Mức giá ra mắt cao",
+      "Sự chênh lệch về hiệu năng chơi game không tạo ra khoảng cách lớn so với thế hệ 7000"
+    ],
+    "recommended_usage": [
+      "Render phim chuyên nghiệp hạng nặng",
+      "Xử lý và huấn luyện mô hình dữ liệu AI cục bộ nhỏ",
+      "Các tác vụ nghiên cứu khoa học, mô phỏng sinh học/vật lý"
+    ],
+    "price_range": "18.000.000 - 20.000.000 VNĐ"
+  },
+  {
+    "id": 19,
+    "category": "CPU",
+    "name": "AMD Ryzen 9 9900X",
+    "brand": "AMD",
+    "description": "Lựa chọn thay thế hợp lý hơn bản 9950X, với kiến trúc Zen 5 mang lại sự cải thiện về mặt nhiệt độ và điện năng vô cùng ấn tượng.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "12",
+      "threads": "24",
+      "base_clock": "4.4 GHz",
+      "boost_clock": "5.6 GHz"
+    },
+    "advantages": [
+      "Mức TDP giảm đáng kể so với 7900X đời trước, dễ dàng làm mát",
+      "Sức mạnh đa nhiệm và biên dịch phần mềm cực kỳ ấn tượng",
+      "Hiệu suất đơn nhân mạnh mẽ hỗ trợ các phần mềm đồ họa tốt hơn"
+    ],
+    "disadvantages": [
+      "Không phải là sự lựa chọn tối ưu chi phí nếu người dùng chỉ tập trung hoàn toàn vào chơi game"
+    ],
+    "recommended_usage": [
+      "Hệ thống Workstation tầm trung cận cao cấp",
+      "Xử lý dữ liệu Excel khổng lồ, làm phim ngắn",
+      "Hệ thống sáng tạo nội dung yên tĩnh và tiết kiệm điện"
+    ],
+    "price_range": "12.500.000 - 14.000.000 VNĐ"
+  },
+  {
+    "id": 20,
+    "category": "CPU",
+    "name": "AMD Ryzen 7 9700X",
+    "brand": "AMD",
+    "description": "Vi xử lý Zen 5 mang sức mạnh của dòng Ryzen 7 gói gọn trong một mức thiết kế nhiệt (TDP) chỉ 65W đầy kinh ngạc.",
+    "specifications": {
+      "socket": "AM5",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.8 GHz",
+      "boost_clock": "5.5 GHz"
+    },
+    "advantages": [
+      "Cực kỳ tiết kiệm điện và mát mẻ so với bất kỳ đối thủ nào cùng phân khúc",
+      "Hiệu năng làm việc đơn nhân cải thiện vô cùng mạnh mẽ",
+      "Phù hợp lắp ráp trong các vỏ case siêu nhỏ gọn"
+    ],
+    "disadvantages": [
+      "Mức TDP thấp phần nào đã kìm hãm sức mạnh đa nhân tối đa của con chip nếu so với tiềm năng thực sự"
+    ],
+    "recommended_usage": [
+      "Build các hệ thống PC Mini-ITX nhỏ gọn, không gian hẹp",
+      "Hệ thống yêu cầu tiêu thụ điện thấp, chạy nguồn công suất nhỏ",
+      "Chơi game AAA kết hợp làm việc cường độ vừa phải"
+    ],
+    "price_range": "9.000.000 - 10.500.000 VNĐ"
+  }
+]
