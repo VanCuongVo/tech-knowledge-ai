@@ -43,8 +43,17 @@ class ChatNotifier extends Notifier<ChatState> {
         isLoading: false,
       );
     } catch (e) {
+      String errorMsg = "Đã xảy ra lỗi: $e";
+      
+      // Bắt các lỗi liên quan đến giới hạn API (Rate limit) của Gemini
+      if (e.toString().contains('429') || 
+          e.toString().contains('quota') || 
+          e.toString().contains('exhausted')) {
+        errorMsg = "Hệ thống AI đang nhận quá nhiều yêu cầu cùng lúc. Bạn vui lòng chờ một lát rồi hỏi lại nhé!";
+      }
+
       final errorMessage = ChatMessage(
-        content: "Đã xảy ra lỗi: $e",
+        content: errorMsg,
         role: MessageRole.assistant,
         createdAt: DateTime.now(),
       );

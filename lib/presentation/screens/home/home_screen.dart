@@ -19,13 +19,15 @@ class HomeScreen extends ConsumerWidget {
           const SnackBar(
             content: Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 20,
                   height: 20,
                   child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2),
                 ),
-                SizedBox(width: 15),
-                Text('Đang nạp tài liệu từ folder RAG & sinh Vector...'),
+                const SizedBox(width: 15),
+                const Expanded(
+                  child: Text('Đang nạp tài liệu từ folder RAG & sinh Vector...'),
+                ),
               ],
             ),
             duration: Duration(days: 1), // Giữ SnackBar đến khi hoàn thành

@@ -51,11 +51,6 @@ class KnowledgeRepositoryImpl implements KnowledgeRepository {
           return e.description;
         })
         .join('\n\n');
-
-    print('=== DỮ LIỆU GỬI LÊN GEMINI ===');
-    print(context);
-    print('==============================');
-
     final prompt =
         '''
 ${PromptConstants.systemPrompt}
