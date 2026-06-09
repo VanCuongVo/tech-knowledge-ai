@@ -57,6 +57,39 @@ lib/
 
 ---
 
+## 🧠 Kiến Trúc AI & Kỹ Thuật Điều Khiển (RAG System)
+
+Dự án áp dụng kỹ thuật **Retrieval-Augmented Generation (RAG)** kết hợp với các phương pháp tối ưu hóa Prompt và Search để điều khiển AI một cách chính xác, tránh hiện tượng "ảo giác" (Hallucination) và ép AI chỉ trả lời dựa trên dữ liệu nội bộ. Dưới đây là chi tiết các bước và kỹ thuật đã triển khai:
+
+### 1. Chuẩn Bị & Băm Nhỏ Dữ Liệu (Text Chunking)
+- **Nguồn dữ liệu:** Các file tài liệu (`.txt`, `.md`) được lưu trữ trong thư mục `assets/rag/`.
+- **Kỹ thuật Chunking:** Đọc nội dung file và băm nhỏ thành các đoạn văn bản (chunk) có giới hạn độ dài (ví dụ: 400 ký tự). Kỹ thuật phân đoạn có **chồng lấn (overlap khoảng 80 ký tự)** được sử dụng để không làm mất đi ngữ nghĩa ở phần chuyển tiếp giữa các đoạn.
+
+### 2. Sinh Vector Ngữ Nghĩa (Word Embedding)
+- Mỗi đoạn văn bản sau khi được băm nhỏ sẽ được gửi đến mô hình `embedding-001` của Gemini.
+- Mô hình này chuyển đổi văn bản thành một **Vector đa chiều (Embedding Vector)** đại diện cho ý nghĩa của câu.
+- Các Vector này cùng với nội dung văn bản gốc được lưu trữ vào Local Database (SQLite).
+
+### 3. Tìm Kiếm Kết Hợp (Hybrid Search & RRF)
+Khi người dùng đặt câu hỏi, hệ thống sử dụng kỹ thuật **Hybrid Search** để truy xuất tài liệu liên quan nhất:
+- **Lexical Search (Tìm kiếm từ khóa):** Loại bỏ các từ vô nghĩa (stop words) và đếm tần suất xuất hiện của từ khóa trong các đoạn văn bản.
+- **Semantic Search (Tìm kiếm ngữ nghĩa):** Sinh Vector cho câu hỏi người dùng và tính toán độ tương đồng (**Cosine Similarity**) với Vector của các đoạn tài liệu trong Database.
+- **Reciprocal Rank Fusion (RRF):** Kết hợp và đánh trọng số thứ hạng của cả hai phương pháp Lexical và Semantic Search để lấy ra 3 đoạn tài liệu có độ chính xác cao nhất. Kỹ thuật này giúp xử lý tốt ngay cả khi người dùng nhập sai chính tả hoặc dùng từ đồng nghĩa.
+
+### 4. Tiêm Ngữ Cảnh & Prompt Engineering
+- 3 đoạn tài liệu tốt nhất sẽ được gộp lại thành một khối ngữ cảnh (Context).
+- **Kỹ thuật Grounding (Neo dữ liệu):** Sử dụng `System Prompt` được thiết kế nghiêm ngặt nhằm kiểm soát mô hình `gemini-2.5-flash`:
+  - **CHỈ** được phép trả lời dựa trên ngữ cảnh được cung cấp.
+  - **KHÔNG** sử dụng kiến thức bên ngoài để tự bịa ra câu trả lời.
+  - Từ chối trả lời nếu câu hỏi nằm ngoài ngữ cảnh (ví dụ: *"Tôi chỉ có thể trả lời các câu hỏi liên quan đến dữ liệu công nghệ..."*).
+- Câu hỏi người dùng và khối ngữ cảnh được kết hợp tiêm vào Prompt cuối cùng gửi cho AI.
+
+### 5. Cơ Chế Chống Lỗi (Retry & Fallback)
+- **Exponential Backoff:** Trong quá trình gọi API, nếu gặp lỗi vượt quá giới hạn request (Rate limit / Quota), hệ thống tự động chờ một khoảng thời gian tăng dần (2s, 4s, 6s...) và thử gọi lại (Retry).
+- **Fallback an toàn:** Nếu API sinh Vector cho câu hỏi gặp sự cố (mất mạng, lỗi server), hệ thống tự động chuyển sang chỉ dùng Lexical Search 100% để đảm bảo ứng dụng không bị crash và người dùng vẫn có cơ hội nhận được câu trả lời.
+
+---
+
 ## 💻 Hướng Dẫn Cài Đặt & Chạy Ứng Dụng
 
 Để chạy ứng dụng trên máy cá nhân, vui lòng làm theo các bước sau:
