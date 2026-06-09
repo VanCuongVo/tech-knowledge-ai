@@ -8,6 +8,7 @@ class Knowledge extends Equatable {
   final List<String> keywords;
   final String rawData;
   final String imageUrl;
+  final List<double>? embedding;
 
   const Knowledge({
     required this.id,
@@ -17,6 +18,7 @@ class Knowledge extends Equatable {
     required this.keywords,
     required this.rawData,
     required this.imageUrl,
+    required this.embedding,
   });
 
   @override
@@ -28,5 +30,6 @@ class Knowledge extends Equatable {
     keywords,
     rawData,
     imageUrl,
+    embedding,
   ];
 }

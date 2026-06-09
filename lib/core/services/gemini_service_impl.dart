@@ -4,12 +4,18 @@ import 'package:knowflow_ai/core/Iservices/gemini_service.dart';
 
 class GeminiServiceImpl implements GeminiService {
   late final GenerativeModel _model;
+  late final GenerativeModel _embeddingModel;
 
   GeminiServiceImpl() {
     _model = GenerativeModel(
       model: Env.modelName,
       apiKey: Env.geminiApiKey,
       generationConfig: GenerationConfig(temperature: 0.0),
+    );
+
+    _embeddingModel = GenerativeModel(
+      model: 'embedding-001',
+      apiKey: Env.geminiApiKey,
     );
   }
 
@@ -18,5 +24,12 @@ class GeminiServiceImpl implements GeminiService {
     final response = await _model.generateContent([Content.text(prompt)]);
 
     return response.text ?? '';
+  }
+
+  @override
+  Future<List<double>> getEmbedding(String text) async {
+    final content = Content.text(text);
+    final response = await _embeddingModel.embedContent(content);
+    return response.embedding.values;
   }
 }

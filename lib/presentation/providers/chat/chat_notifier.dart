@@ -42,9 +42,9 @@ class ChatNotifier extends Notifier<ChatState> {
         messages: [...state.messages, aiMessage],
         isLoading: false,
       );
-    } catch (_) {
+    } catch (e) {
       final errorMessage = ChatMessage(
-        content: "Đã xảy ra lỗi.",
+        content: "Đã xảy ra lỗi: $e",
         role: MessageRole.assistant,
         createdAt: DateTime.now(),
       );

@@ -23,7 +23,7 @@ class DatabaseHelper {
 
     return await openDatabase(
       path,
-      version: 3,
+      version: 4, // 1. Tăng version lên 4
       onCreate: _createDatabase,
       onUpgrade: (db, oldVersion, newVersion) async {
         await db.execute('DROP TABLE IF EXISTS knowledge');
@@ -40,7 +40,8 @@ class DatabaseHelper {
       category TEXT NOT NULL,
       description TEXT NOT NULL,
       keywords TEXT NOT NULL,
-      imageUrl TEXT
+      imageUrl TEXT,
+      embedding TEXT -- 2. Thêm cột lưu trữ Vector dạng chuỗi JSON
     )
   ''');
 

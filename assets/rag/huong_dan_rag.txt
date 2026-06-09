@@ -1,0 +1,49 @@
+TÀI LIỆU CẤU HÌNH CHI TIẾT SẢN PHẨM PHẦN CỨNG - KNOWFLOW AI
+
+1. Card màn hình NVIDIA GeForce RTX 4060 (Phân khúc trung cấp):
+- Kiến trúc GPU: Ada Lovelace (Tiến trình TSMC 4N độc quyền).
+- Số nhân CUDA: 3072 nhân.
+- Xung nhịp: Xung nhịp cơ bản 1.83 GHz, xung nhịp Boost tăng tốc đạt 2.46 GHz.
+- Bộ nhớ (VRAM): Dung lượng 8GB GDDR6, độ rộng băng thông bus 128-bit, tốc độ bộ nhớ 17 Gbps, băng thông tổng đạt 272 GB/s.
+- Lớp nhân phụ trợ: Nhân dò tia Ray Tracing thế hệ thứ 3 (hỗ trợ OP Micromap và Displaced Micro-Mesh), nhân Tensor học sâu thế hệ thứ 4 hỗ trợ tạo khung hình ảo DLSS 3 (Frame Generation).
+- Công suất và nguồn đề xuất: Mức tiêu thụ điện năng TDP chỉ 115W (cực kỳ tiết kiệm điện). Nguồn máy tính (PSU) đề nghị từ 550W trở lên.
+- Hiệu năng mục tiêu: Trải nghiệm gaming mượt mà trên 100 FPS đối với các game eSports và AAA ở độ phân giải Full HD (1080p) thiết lập đồ họa tối đa.
+
+2. Card màn hình NVIDIA GeForce RTX 4070 (Phân khúc cận cao cấp):
+- Kiến trúc GPU: Ada Lovelace.
+- Số nhân CUDA: 5888 nhân (gần gấp đôi RTX 4060).
+- Xung nhịp: Xung nhịp cơ bản 1.92 GHz, xung nhịp Boost đạt 2.48 GHz.
+- Bộ nhớ (VRAM): Dung lượng 12GB GDDR6X tốc độ cao, độ rộng bus 192-bit, tốc độ bộ nhớ 21 Gbps, băng thông tổng đạt 504 GB/s.
+- Lớp nhân phụ trợ: Nhân Ray Tracing thế hệ 3, nhân Tensor thế hệ 4 hỗ trợ DLSS 3, mã hóa video kép NVENC AV1 thế hệ thứ 8 (thích hợp cho streamer và dựng phim).
+- Công suất và nguồn đề xuất: Mức tiêu thụ điện năng TDP là 200W. Khuyến nghị sử dụng bộ nguồn máy tính (PSU) từ 650W trở lên.
+- Hiệu năng mục tiêu: Chinh phục mượt mà tất cả các tựa game nặng ở độ phân giải 2K (1440p) trên 80 FPS và xử lý tốt đồ họa 3D, dựng hình Blender, ứng dụng trí tuệ nhân tạo (AI) học sâu ổn định.
+
+3. Bộ vi xử lý AMD Ryzen 5 7600 (Phân khúc tầm trung):
+- Kiến trúc CPU: Zen 4 (Tiến trình TSMC 5nm).
+- Số nhân vật lý: 6 nhân.
+- Số luồng xử lý: 12 luồng.
+- Xung nhịp: Xung nhịp cơ bản 3.8 GHz, xung nhịp Boost tối đa đạt 5.1 GHz.
+- Bộ nhớ đệm (Cache): Bộ nhớ đệm L2 là 6MB (1MB mỗi nhân), bộ nhớ đệm L3 Cache là 32MB (áp dụng công nghệ AMD GameCache).
+- Hỗ trợ phần cứng: Socket AM5 hoàn toàn mới, bắt buộc sử dụng RAM chuẩn DDR5 (không hỗ trợ DDR4), băng thông PCIe Gen 5 cho ổ cứng SSD và card rời. Tích hợp sẵn GPU onboard AMD Radeon Graphics cơ bản (2 nhân đồ họa, xung nhịp 2200 MHz).
+- Mức tỏa nhiệt (TDP): Thiết kế TDP mặc định 65W, chạy vô cùng mát mẻ với tản nhiệt đi kèm AMD Wraith Stealth.
+- Hiệu năng mục tiêu: Tối ưu cho cấu hình máy tính gaming tầm trung kết hợp học lập trình đa nhiệm nhờ tốc độ đơn nhân vượt trội.
+
+4. Bộ vi xử lý Intel Core i5-13400F (Phân khúc phổ thông):
+- Kiến trúc CPU: Raptor Lake thế hệ thứ 13 (Tiến trình Intel 7 - 10nm Enhanced SuperFin).
+- Số nhân vật lý: 10 nhân (bao gồm 6 nhân hiệu năng cao P-Core và 4 nhân tiết kiệm điện E-Core).
+- Số luồng xử lý: 16 luồng.
+- Xung nhịp: Xung nhịp P-Core Boost đạt 4.6 GHz, xung nhịp E-Core Boost đạt 3.3 GHz.
+- Bộ nhớ đệm (Cache): Intel Smart Cache (L3 Cache) đạt 20MB, L2 Cache đạt 9.5MB.
+- Hỗ trợ phần cứng: Socket LGA 1700, hỗ trợ song song cả RAM chuẩn DDR4 (tối đa 3200 MHz) và RAM DDR5 (tối đa 4800 MHz) giúp tiết kiệm chi phí build PC. Dòng F-series không tích hợp sẵn bộ xử lý đồ họa (iGPU).
+- Mức tỏa nhiệt (TDP): Điện năng tiêu thụ cơ bản là 65W, điện năng tiêu thụ tối đa ở chế độ Turbo Boost đạt 154W.
+- Hiệu năng mục tiêu: Đa nhiệm tốt phù hợp cho học tập, văn phòng, đồ họa 2D nhẹ nhàng và chơi game ở độ phân giải 1080p đi kèm card rời.
+
+5. Ổ cứng SSD Samsung 990 Pro (Lưu trữ cao cấp):
+- Kiểu dáng thiết kế: M.2 2280 gọn nhẹ.
+- Chuẩn giao tiếp: NVMe PCIe Gen 4.0 x4 (tương thích ngược với PCIe Gen 3.0).
+- Bộ điều khiển (Controller): Samsung Pascal Controller thế hệ mới tối ưu nhiệt lượng và tốc độ.
+- Bộ nhớ đệm DRAM: Trang bị 1GB hoặc 2GB LPDDR4 DRAM cache tùy theo phiên bản dung lượng.
+- Tốc độ truyền tải: Tốc độ đọc tuần tự tối đa đạt 7450 MB/s, tốc độ ghi tuần tự tối đa đạt 6900 MB/s.
+- Tốc độ đọc ghi ngẫu nhiên (IOPS): Tốc độ đọc ngẫu nhiên đạt 1,400,000 IOPS, tốc độ ghi ngẫu nhiên đạt 1,550,000 IOPS (tối ưu hóa thời gian load game cực nhanh).
+- Độ bền ghi dữ liệu (TBW): Đạt tới 600 TBW đối với phiên bản dung lượng 1TB và 1200 TBW đối với bản 2TB.
+- Phù hợp sử dụng: Lắp đặt mở rộng bộ nhớ trong cho máy chơi game Playstation 5 (PS5), máy tính chuyên làm phim đồ họa 4K/8K nặng liên tục.

@@ -19,7 +19,9 @@ class HomeNotifier extends Notifier<HomeState> {
       state = state.copyWith(isLoading: true);
     }
     try {
-      final items = await getAllKnowledgeUseCase();
+      final allItems = await getAllKnowledgeUseCase();
+      // Lọc bỏ các đoạn tài liệu RAG để màn hình chính chỉ hiển thị sản phẩm đẹp
+      final items = allItems.where((item) => !item.name.contains('(Đoạn')).toList();
       state = state.copyWith(items: items, isLoading: false, errorMessage: null);
     } catch (e) {
       print('Error loading knowledge: $e');
