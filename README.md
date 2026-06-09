@@ -1,5 +1,7 @@
 # KnowFlow AI - Kho Dữ Liệu Công Nghệ & Chatbot Thông Minh
 
+[📄 Tài liệu dự án (Google Docs)](https://docs.google.com/document/d/16eTuFFsr_5_JLdgHL0RR1tn3RWt_xhp-rs9ngpG81iU/edit?usp=sharing)
+
 KnowFlow AI là một ứng dụng di động được xây dựng bằng **Flutter**, kết hợp giữa kho dữ liệu thông tin phần cứng công nghệ (CPU, GPU, SSD) và Chatbot AI thông minh được tích hợp **Gemini API**. Dự án tuân thủ chặt chẽ **Clean Architecture** và sử dụng các thư viện quản lý trạng thái hiện đại.
 
 ---
