@@ -14,7 +14,7 @@ class GeminiServiceImpl implements GeminiService {
     );
 
     _embeddingModel = GenerativeModel(
-      model: 'embedding-001',
+      model: 'gemini-embedding-001',
       apiKey: Env.geminiApiKey,
     );
   }

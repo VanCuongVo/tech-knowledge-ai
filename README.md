@@ -68,7 +68,7 @@ Dự án áp dụng kỹ thuật **Retrieval-Augmented Generation (RAG)** kết 
 - **Kỹ thuật Chunking:** Đọc nội dung file và băm nhỏ thành các đoạn văn bản (chunk) có giới hạn độ dài (ví dụ: 400 ký tự). Kỹ thuật phân đoạn có **chồng lấn (overlap khoảng 80 ký tự)** được sử dụng để không làm mất đi ngữ nghĩa ở phần chuyển tiếp giữa các đoạn.
 
 ### 2. Sinh Vector Ngữ Nghĩa (Word Embedding)
-- Mỗi đoạn văn bản sau khi được băm nhỏ sẽ được gửi đến mô hình `embedding-001` của Gemini.
+- Mỗi đoạn văn bản sau khi được băm nhỏ sẽ được gửi đến mô hình `gemini-embedding-001` của Gemini.
 - Mô hình này chuyển đổi văn bản thành một **Vector đa chiều (Embedding Vector)** đại diện cho ý nghĩa của câu.
 - Các Vector này cùng với nội dung văn bản gốc được lưu trữ vào Local Database (SQLite).
 
