@@ -23,7 +23,7 @@ class DatabaseHelper {
 
     return await openDatabase(
       path,
-      version: 4, // 1. Tăng version lên 4
+      version: 5, // 1. Tăng version lên 5
       onCreate: _createDatabase,
       onUpgrade: (db, oldVersion, newVersion) async {
         await db.execute('DROP TABLE IF EXISTS knowledge');

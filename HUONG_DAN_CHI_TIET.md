@@ -107,7 +107,7 @@ Future<void> setupDependencies() async {
 
   // 4. Use Cases
   sl.registerLazySingleton(() => AskAIUseCase(sl()));
-}x
+}
 ```
 
 ### 3.5. Lớp Presentation (Giao diện)

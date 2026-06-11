@@ -123,6 +123,16 @@ class KnowledgeLocalDataSourceImpl implements KnowledgeLocalDataSource {
   }
 
   @override
+  Future<void> clearRagKnowledge() async {
+    if (kIsWeb) {
+      _webMemoryDb.removeWhere((item) => item.imageUrl == '');
+      return;
+    }
+    final db = await DatabaseHelper.instance.database;
+    await db.delete('knowledge', where: "imageUrl = ''");
+  }
+
+  @override
   Future<void> insertKnowledge(KnowledgeModel knowledge) async {
     if (kIsWeb) {
       _webMemoryDb.add(knowledge);

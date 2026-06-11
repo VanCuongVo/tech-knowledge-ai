@@ -5,4 +5,5 @@ abstract interface class KnowledgeLocalDataSource {
   Future<void> updateKnowledgeEmbedding(int id, List<double> embedding);
   Future<void> insertKnowledge(KnowledgeModel knowledge);
   Future<void> clearAllKnowledge();
+  Future<void> clearRagKnowledge();
 }

@@ -34,8 +34,8 @@ class RAGProcessorServiceImpl implements RAGProcessorService {
       return;
     }
 
-    // 2. Xóa sạch dữ liệu cũ trong DB để tránh trùng lặp
-    await localDataSource.clearAllKnowledge();
+    // 2. Xóa sạch dữ liệu RAG cũ trong DB để tránh trùng lặp
+    await localDataSource.clearRagKnowledge();
 
     // 3. Xử lý từng file
     for (final path in filePaths) {
