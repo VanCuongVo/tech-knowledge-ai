@@ -42,25 +42,27 @@ class KnowledgeRepositoryImpl implements KnowledgeRepository {
       queryEmbedding: queryEmbedding,
     );
 
-    if (results.isEmpty) {
-      return '''Tôi không tìm thấy thông tin trong cơ sở tri thức.''';
-    }
-
     final context = results
         .map((e) {
-          return e.description;
+          return '- SẢN PHẨM: ${e.name} (${e.category})\n  CHI TIẾT: ${e.description}';
         })
         .join('\n\n');
-    final prompt =
-        '''
+
+    final productsOnly = data.where((e) => e.imageUrl.isNotEmpty).toList();
+    final summaryList = productsOnly.isEmpty 
+        ? '(Không có sản phẩm nào trong hệ thống)' 
+        : productsOnly.map((e) => '- ${e.name} (${e.category})').join('\n');
+
+    final prompt = '''
 ${PromptConstants.systemPrompt}
 
-DỮ LIỆU:
+DANH SÁCH TẤT CẢ SẢN PHẨM TRONG HỆ THỐNG:
+$summaryList
 
+DỮ LIỆU CHI TIẾT ĐƯỢC TÌM THẤY:
 $context
 
 CÂU HỎI:
-
 $question
 ''';
 

@@ -20,7 +20,7 @@ class HomeNotifier extends Notifier<HomeState> {
     }
     try {
       final allItems = await getAllKnowledgeUseCase();
-      final items = allItems;
+      final items = allItems.where((e) => e.imageUrl.isNotEmpty).toList();
       state = state.copyWith(items: items, isLoading: false, errorMessage: null);
     } catch (e) {
       print('Error loading knowledge: $e');

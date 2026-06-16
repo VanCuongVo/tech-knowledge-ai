@@ -31,10 +31,10 @@ class SearchServiceImpl implements SearchService {
         .where((w) => !stopWords.contains(w) && w.isNotEmpty)
         .toList();
 
-    final lexicalScores = <Knowledge, int>{}; // khỏi tạo ra một cái map
+    final lexicalScores = <Knowledge, int>{}; // khởi tạo ra một cái map
     for (final item in data) {
       int score = 0;
-      final content = item.description.toLowerCase();
+      final content = '${item.name} ${item.category} ${item.description} ${item.keywords.join(' ')}'.toLowerCase();
       for (final word in words) {
         if (content.contains(word)) {
           score++;
